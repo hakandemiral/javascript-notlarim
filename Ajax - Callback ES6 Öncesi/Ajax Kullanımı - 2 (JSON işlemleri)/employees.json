@@ -1,0 +1,17 @@
+[
+    {
+        "name" : "Hakan Demiral",
+        "department" : "Dev",
+        "salary" : "5000"
+    },
+    {
+        "name" : "Hasan Düzyatanlar",
+        "department" : "Marketing",
+        "salary" : "4800"
+    },
+    {
+        "name" : "Mehmet Tersyatanlar",
+        "department" : "Security",
+        "salary" : "3400"
+    }
+]

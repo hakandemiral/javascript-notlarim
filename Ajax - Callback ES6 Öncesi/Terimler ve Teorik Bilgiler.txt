@@ -1,0 +1,23 @@
+Ajax Nedir?
+    Asynchronus Javascript and XML'in kısaltmasıdır, asenkron olarak veri alma gönderme işlemleri yapar, sayfa yenilenmesine ihtiyaç duymadan bunları sayfaya ekleyip çıkartır vs.
+
+XHR Object
+    XML Http Request'in kısaltmasıdır, bir yere istek(Request) gönderdiğimizde JSON veya XML formatında veri alırız.
+
+Nasıl Çalışır?
+    Bir XHR objesi oluştururuz, veriyi almak istediğimiz yere HttpRequest göndeririz, cevap XHR objemize geri döner, gelen veriyi kullanabiliriz.
+
+HTTP Durum Bilgi Kodları
+200 : OK : Herşey yolunda
+403 : Forbidden : Yetkilendirme hatası, girişe izin verilmemesi
+404 : Not Found : İstek atılan yerin bulunamaması
+505 : Internal Server Error : Sunucu hatası
+
+XHR Durum Kodları
+0 : İstek başlatılamadı
+1 : Sunucu ile bğalantı kuruldu
+2 : İstek teslim edildi
+3 : İstek işleniyor
+4 : İstek tamamlandır, cevap hazır.
+
+! Dönen cevap her zaman için stringdir.
