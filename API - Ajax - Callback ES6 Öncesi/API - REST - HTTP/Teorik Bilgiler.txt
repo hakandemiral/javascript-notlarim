@@ -1,0 +1,29 @@
+API
+        Application Programmig Interface yani uygulamaların birbirlerinin fonksiyonlarını kullanmasını sağlayan bir arayüz.
+
+    Request ve Response
+        İstek ve Cevap => karşıya gönderilen istek ve gelen cevap.
+
+REST API
+    Temsili Durum Transferi olarak Türkçeleştirilebilir.
+
+    Stateless bir yapıdır.
+        Sunucu ve istemcinin birbirlerinin yapısı hakkında bilgileri yoktur.
+
+    Bağımsız
+        Programla dili, işletim sistemi gibi konularda tamamen bağımsızdır, Client'i turist - Server'ı ev sahibi ülke vatandaşı olarak düşünürsek RESTAPI Google Translate'dir.
+    
+HTTP Request
+
+    GET : Veri almak için.
+    POST : Veri göndermek için.
+    PUT : Var olan bir veriyi güncellemek için
+    DELETE : Var olan bir veriyi silmek için.
+
+API Endpoint
+
+    GET => https://api.exaple.com/posts => Tüm postları istedik
+    GET => https://api.exaple.com/posts/10 => id değeri 10 olan postu istedik
+    POST => https://api.example.com/posts => yeni bir post ekledik
+    PUT => https://api.example.com/posts/1 => id değeri 1 olan postu güncelledik
+    DELETE => https://api.example.com/post/1 => id değeri 1 olan postu sildik

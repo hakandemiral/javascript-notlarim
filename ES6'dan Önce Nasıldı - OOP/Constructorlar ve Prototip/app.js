@@ -6,7 +6,7 @@ function Employee(name,surname,age,salary){ //Constructor atanırken baş harf b
     this.age = age,
     this.salary = salary
 }
-Employee.prototype.selam = function(){ //prototype'a fonksiyon eklerken arrow function kullanamıyoruz
+Employee.prototype.selam = function(){ //prototype'a fonksiyon eklerken arrow function kullanamıyoruz sanırım this ile ilgili
     console.log(this.name + " sizi selamlıyor!");
 }
 

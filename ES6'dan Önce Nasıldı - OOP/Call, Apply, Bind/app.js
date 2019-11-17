@@ -23,7 +23,9 @@ addNumbers.apply(obj2,[200, 100]); //Tek farkı argümanları array halinde alı
 //Bind (Kopya bir fonksiyon üretir)
 
 //Bir fonksiyon üretelim
-function getNumbersTotal(number3,number4){return this.number1 + this.number2 + number3 + number4}
+function getNumbersTotal(number3,number4){
+    return this.number1 + this.number2 + number3 + number4
+};
 
 //Bind ile hem obj1'e göre çalıştırıp hem de kopya üretmiş olalım
 const copyFunction = getNumbersTotal.bind(obj1);
