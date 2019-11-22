@@ -5,7 +5,7 @@ const form = document.querySelector("#translate-form"); //formun genelini seçiy
 word.addEventListener("keyup", translateWord); //inputtaki harflere bastıkça fonksiyon çalışacak, bu deneme projesi olduğundan sakıncası yok, yandexin free api sınırını aşmam pek mümkün değil
 lang.addEventListener("change", translateWord); //dil değiştikçe fonksiyon çalışacak, eventlistener üzerinde change dinlemek bazı tarayıcılarda sorun çıkartabilir, son kullanıcıya direkt çıkacağınızda bunun yerine onchanges özelliğine fonksiyon atamak daha iyi olacaktır.
 
-function translateWord(e){ //translate word fonksiyonumu tanımlıyorum
+function translateWord(){ //translate word fonksiyonumu tanımlıyorum
     const translate = new Translate(word.value, lang.value); //translate.js içindeki constructor'ımı kullanarak yeni bir Translate objesi oluşturuyorum
     const ui = new UI(); //ui.js içindeki constructor'ımı kullanarak yeni bir UI objesi oluşturuyorum
 
