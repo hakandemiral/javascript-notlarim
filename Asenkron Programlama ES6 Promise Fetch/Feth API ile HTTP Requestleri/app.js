@@ -52,13 +52,13 @@ class Request{ //Request sınıfımı oluşturdum
 
 const request = new Request(); //bir request objesi oluşturuyorum
 
-// request.get("https://jsonplaceholder.typicode.com/albums") //request objem üzerinden get metoduma endpointimi gönderiyorum, bana bir promise dönecek
-// .then(albums => { //dönen promise içinden resolve'u yakalıyoruz ve albumse atıyoruz
-//     console.log(albums); //albums'u konsola basıyorum
-// })
-// .catch(err => { //reject döndü ise onu yakalayıp konsola basıyorum
-//     console.log(err); 
-// })
+request.get("https://jsonplaceholder.typicode.com/albums") //request objem üzerinden get metoduma endpointimi gönderiyorum, bana bir promise dönecek
+.then(albums => { //dönen promise içinden resolve'u yakalıyoruz ve albumse atıyoruz
+    console.log(albums); //albums'u konsola basıyorum
+})
+.catch(err => { //reject döndü ise onu yakalayıp konsola basıyorum
+    console.log(err); 
+})
 
 // request.post("https://jsonplaceholder.typicode.com/albums", {title: "This Title", body : "This Body", userId : 333})
 // .then(newAlbum => console.log(newAlbum))
@@ -68,6 +68,6 @@ const request = new Request(); //bir request objesi oluşturuyorum
 // .then(replaceAlbum => console.log(replaceAlbum))
 // .catch(err => console.log(err));
 
-request.delete("1","https://jsonplaceholder.typicode.com/albums")
-.then(message => console.log(message))
-.catch(err => console.log(err))
+// request.delete("1","https://jsonplaceholder.typicode.com/albums")
+// .then(message => console.log(message))
+// .catch(err => console.log(err))
