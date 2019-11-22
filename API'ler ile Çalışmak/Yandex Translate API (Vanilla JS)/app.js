@@ -2,7 +2,8 @@
 const word = document.querySelector("#word"); //kelime giriş inputumu seçiyorum
 const lang = document.querySelector("#language"); //çevrilecek dili seçtiğim elementi seçiyorum
 const form = document.querySelector("#translate-form"); //formun genelini seçiyorum
-form.addEventListener("submit", translateWord); //form submit olduğunda translateWord fonksiyonunu çalıştır
+word.addEventListener("keyup", translateWord); //inputtaki harflere bastıkça fonksiyon çalışacak, bu deneme projesi olduğundan sakıncası yok, yandexin free api sınırını aşmam pek mümkün değil
+lang.addEventListener("change", translateWord); //dil değiştikçe fonksiyon çalışacak, eventlistener üzerinde change dinlemek bazı tarayıcılarda sorun çıkartabilir, son kullanıcıya direkt çıkacağınızda bunun yerine onchanges özelliğine fonksiyon atamak daha iyi olacaktır.
 
 function translateWord(e){ //translate word fonksiyonumu tanımlıyorum
     const translate = new Translate(word.value, lang.value); //translate.js içindeki constructor'ımı kullanarak yeni bir Translate objesi oluşturuyorum
@@ -16,6 +17,4 @@ function translateWord(e){ //translate word fonksiyonumu tanımlıyorum
             console.log(err); //konsola gelen hatayı bas
         }
     })
-
-    e.preventDefault(); //event listener callback olarak tetiklenen elementi döndü, yani şu an e=mc2... değil e = formum, form üzeirnde preventDefault methodu ile formun submit olduğunda sayfa yenilenmesini veya bir yere gitmesini engelliyorum.
 }
