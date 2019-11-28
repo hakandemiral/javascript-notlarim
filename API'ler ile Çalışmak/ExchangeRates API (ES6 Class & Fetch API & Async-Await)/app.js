@@ -5,7 +5,7 @@ const secondCurrency = document.querySelector("#secondCurrency");
 const outputFirst = document.querySelector("#outputFirst");
 const outputSecond = document.querySelector("#outputSecond");
 const result = document.querySelector("#outputResult");
-const symbolSelect = document.querySelector("#symbol-selector")
+const symbolSelect = document.querySelector("#symbol-selector");
 
 //Karşı sunucuya mümkün olduğunca az istek atmak için gerekli işler...
 Currency.setRates(baseCurrency.value); //İlk açılışta rate değerlerini default birime göre alıyorum
@@ -14,7 +14,7 @@ Currency.setRates(baseCurrency.value); //İlk açılışta rate değerlerini def
 setInterval(() => {Currency.setRates(baseCurrency.value)}, 60000);
 
 //base veya second para birimlerinden herhangi biri değiştiğinde hesaplamayı tetikliyorum ayrıca ui üzerindeki para birimlerini değiştiriyorum
-symbolSelect.addEventListener("change", (event) => {
+symbolSelect.addEventListener("change", () => {
 
     if(event.target.id === "baseCurrency"){ //eğer base değişmişse tekrardan istek atmamız gerekiyor
         Currency.setRates(baseCurrency.value).then(() => { //isteği atıyoruz fakat fetch'in resolve olmasını da beklememiz gerekiyor
@@ -25,6 +25,7 @@ symbolSelect.addEventListener("change", (event) => {
     else{
         UI.changeSymbol();
         calc();
+    
     } 
 }); 
 
