@@ -80,7 +80,9 @@ class UI{
 
     static clearLastSearched(){
 
-        lastSearchedUsers.childNodes.forEach((node) => node.remove());
+        while(lastSearchedUsers.firstElementChild !== null){
+            lastSearchedUsers.firstElementChild.remove();
+        }
     }
 
     static showAlert(type, message){
