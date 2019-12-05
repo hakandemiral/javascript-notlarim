@@ -1,0 +1,16 @@
+{
+  "employees": [
+    {
+      "name": "Arda Zaman",
+      "department": "Payment",
+      "salary": "9000",
+      "id": 1
+    },
+    {
+      "name": "Hakan Demiral",
+      "department": "JavaScript",
+      "salary": "987678",
+      "id": 2
+    }
+  ]
+}

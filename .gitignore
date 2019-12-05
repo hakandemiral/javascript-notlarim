@@ -4,3 +4,6 @@
 
 # İşletim sistemi dosya yöneticisi dosyaları
 .DS_Store
+
+#NodeJS Modülleri
+node_modules/

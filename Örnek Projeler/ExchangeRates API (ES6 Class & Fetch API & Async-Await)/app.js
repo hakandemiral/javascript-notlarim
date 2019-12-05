@@ -29,7 +29,7 @@ symbolSelect.addEventListener("change", () => {
     } 
 }); 
 
-amount.addEventListener("keyup", calc); //miktar değiştirildikçe tekrardan hesaplanacak
+amount.addEventListener("input", calc); //miktar değiştirildikçe tekrardan hesaplanacak
 
 function calc(){ //hesaplama fonksiyonumu tanımlıyorum
     
